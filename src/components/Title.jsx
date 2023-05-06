@@ -1,7 +1,12 @@
-import React from "react";
+/* eslint-disable react/prop-types */
 
-const Title = () => {
-  return <h2>Title</h2>;
+const Title = ({ text }) => {
+  return (
+    <div className="title">
+      <h2>{text || "default title"}</h2>
+      <div className="underline"></div>
+    </div>
+  );
 };
 
 export default Title;
